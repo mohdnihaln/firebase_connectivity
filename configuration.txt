@@ -1,7 +1,7 @@
 1. Take the firebase project
 2. Click on add app below the projet name
 3. Select the flutter option
-4. Install the Firebase CLI and log in (run < firebase login > )
+4. Install the Firebase CLI and log in (run < firebase login > ) add path to enviromental variables in system
 5. Activate the global cli using < dart pub global activate flutterfire_cli >
 6. Confirm that you are at root of the project directory ( < ls > Can be used for checking )
 7. Run this command < flutterfire configure --project=projectname > to configure your firebase to project
@@ -10,4 +10,5 @@
 10. At main.dart < await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform, ); > 
     add this command above runApp
 11. Add async for the error awaits after void main
-12. < WidgetsFlutterBinding.ensureInitialized(); > you can add this command above await if you don't have options command
+12. < WidgetsFlutterBinding.ensureInitialized(); > you can add this command above await
+    if you don't have options command
