@@ -5,6 +5,7 @@
 5. Activate the global cli using < dart pub global activate flutterfire_cli >
 6. Confirm that you are at root of the project directory ( < ls > Can be used for checking )
 7. Run this command < flutterfire configure --project=projectname > to configure your firebase to project
+    if you get error while running this command. you can fix the error by this method ( https://gist.github.com/mohdnihaln/62bc608d12238747b55c84a21df9c0b7 )
 8. Select the OS for your project
 9. At Lib select firebase options file and import the firebase_core package
 10. At main.dart < await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform, ); > 
